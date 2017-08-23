@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
     <!-- 
 
     Index - Mini Avaliação DW1
@@ -39,23 +39,49 @@
                 <!-- Div para alinhar calculadora no centro -->
                 <div class="centro">
 
-                    <!-- Calculadora em si -->
-                    <section class="calculadora">
-                        <h2>Calculadora</h2>
+                    <!-- Tabela -->
+                    <section class="cliente">
+                        <h2>CLIENTES</h2>
 
-                        <!-- Inputs que vão receber os valores de entrada e a saída do calculo -->
-                        <article class="entradas">
-                            <input type="text" name="resultado" id="resultado" readonly="true" placeholder="Resultado"><br>
-                            <input type="text" name="numero1" id="numero1" placeholder="Número 1"><input type="text" name="numero2" id="numero2" placeholder="Número 2"><br>
+                        <!-- Tabela com as informações dos clientes -->
+                        <article class="tabela_cliente">
+                            <table>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Telefone</th>
+                                    <th>Email</th>
+                                    <th>Endereço</th>
+                                </tr>
+                                <tr>
+                                    <td>Vader</td>
+                                    <td>1111-1111</td>
+                                    <td>valder@gmail.com</td>
+                                    <td>Rua X</td>
+                                </tr>
+                                <tr>
+                                    <td>Leia</td>
+                                    <td>2222-2222</td>
+                                    <td>leia@gmail.com</td>
+                                    <td>Rua Y</td>
+                                </tr>
+                                <tr>
+                                    <td>Padmé</td>
+                                    <td>3333-333</td>
+                                    <td>padme@gmail.com</td>
+                                    <td>Rua W</td>
+                                </tr>
+
+                            </table>
                         </article>
 
-                        <!-- Botões para selecionar a operação que será realizada -->
-                        <aside class="botoes">
-                            <button class="btn">+</button>
-                            <button class="btn">-</button>
-                            <button class="btn">*</button>
-                            <button class="btn">/</button>
-                        </aside>
+
+                        <button class="btn-exportar">Exportar</button>
+                        
+                        <hr>
+                        <label> RESULTADO </label><br>
+                        <textarea rows="4" cols="50">
+
+                        </textarea>
                     </section>
                 </div>
 
