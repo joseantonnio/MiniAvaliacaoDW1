@@ -1,20 +1,33 @@
-
 <!DOCTYPE html>
 <html>
+    
+    <!-- 
+
+    Index - Mini Avaliação DW1
+    Autores: Alex Souza e José Antonio
+
+    Instituto Federal de São Paulo campus São Carlos
+    The content of project is licensed under The Unlicense <http://unlicense.org/#the-unlicense>.
+
+    -->
+
     <head>
+        <!-- Cabeçalho HTML padrão gerado pelo Emmit -->
         <meta charset="utf-8">
         <title>Terceira Entrega</title>
+        <!-- A variável GET "c" na referencia é para forçar o navegador recarregar o CSS -->
         <link rel="stylesheet" href="style.css?c=">
     </head>
     <body>
 
-        <div id="principal">
+        <!-- Div que vai segurar o tamanho de todo o site -->
+        <div class="principal">
 
-            <div id="conteudo">
-
+            <!-- Div branca com borda e cantos arredondados com a calculadora -->
+            <div class="conteudo">
                 <h2>ATIVIDADE DE JAVASCRIPT</h2>
 
-
+                <!-- Menu do site -->
                 <nav class="menu">
                     <ul>
                         <li><a href="#">Calculadora</a></li>
@@ -23,35 +36,34 @@
                     </ul>
                 </nav>
 
-                <div id="centro">
-                    <div id="calculadora">
+                <!-- Div para alinhar calculadora no centro -->
+                <div class="centro">
+
+                    <!-- Calculadora em si -->
+                    <section class="calculadora">
                         <h2>Calculadora</h2>
 
-                        <div class="entradas">
-                            <input type="text" name="fname" placeholder="RESULTADO"><br>
-                        </div>
+                        <!-- Inputs que vão receber os valores de entrada e a saída do calculo -->
+                        <article class="entradas">
+                            <input type="text" name="resultado" id="resultado" readonly="true" placeholder="Resultado"><br>
+                            <input type="text" name="numero1" id="numero1" placeholder="Número 1"><input type="text" name="numero2" id="numero2" placeholder="Número 2"><br>
+                        </article>
 
-                        <div class="botoes">
+                        <!-- Botões para selecionar a operação que será realizada -->
+                        <aside class="botoes">
                             <button class="btn">+</button>
                             <button class="btn">-</button>
                             <button class="btn">*</button>
                             <button class="btn">/</button>
-                        </div>
-
-
-                    </div>
-
-
-
+                        </aside>
+                    </section>
                 </div>
 
-                <div id="rodape">
+                <!-- Rodapé com as informações do proejto -->
+                <footer>
                     <h4>Sistema desenvolvido por Alex Souza e José Antonio - 2017</h4>
-                </div>
-
+                </footer>
             </div>
-
         </div>
-
     </body>
 </html>
