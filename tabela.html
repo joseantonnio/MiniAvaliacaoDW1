@@ -17,6 +17,7 @@
     <title>ATIVIDADE DE JAVASCRIPTa</title>
     <!-- A variável GET "c" na referencia é para forçar o navegador recarregar o CSS -->
     <link rel="stylesheet" href="style.css?c=">
+    <script src="app.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
 
                     <!-- Tabela com as informações dos clientes -->
                     <article class="tabela_cliente">
-                        <table>
+                        <table id="exportar">
                             <tr>
                                 <th>Nome</th>
                                 <th>Telefone</th>
@@ -75,13 +76,13 @@
                     </article>
 
                     <!-- Botão de exportar -->
-                    <button class="btn-exportar">Exportar</button>
+                    <button class="btn-exportar" onclick="exportarCsv()">Exportar</button>
 
                     <hr />
 
                     <!-- Resultado da exportação -->
                     <label>RESULTADO</label><br>
-                    <textarea rows="4" cols="50"></textarea>
+                    <textarea rows="4" cols="50" id="resultadocsv" readonly></textarea>
                 </section>
             </div>
 
