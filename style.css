@@ -12,6 +12,9 @@
 body {
     background: url('img/fundo.jpg') repeat #EDEDED;
 }
+h1, h2, h3, h4, h5, h6 {
+    color: #0278a0;
+}
 
 /* 2.1 Estrutura do Site */
 .principal {
@@ -25,7 +28,7 @@ body {
     background: #FFF;
     width:99%;
     margin-top: 50px;
-    border: 2px solid #333;
+    border: 2px solid #025277;
     border-radius: 5px 5px 5px 5px;
     text-align: center;
 }
@@ -36,7 +39,7 @@ body {
     display: inline-block;
     margin: auto;
     padding: 0 20px 20px 20px;
-    border: 2px solid #333;
+    border: 2px solid #025277;
     border-radius: 5px 5px 5px 5px;
     text-align: center;  
 }
@@ -54,7 +57,7 @@ body {
     display: inline-block;
     margin: auto;
     padding: 0 20px 20px 20px;
-    border: 2px solid #333;
+    border: 2px solid #025277;
     border-radius: 5px 5px 5px 5px;
     text-align: center;  
 }
@@ -83,7 +86,7 @@ body {
 .menu ul li a:hover {
     background:#D6D6D6;
     color: #6D6D6D;
-    border-bottom:3px solid #EA0000;
+    border-bottom:3px solid #025277;
     font-weight: bold;
     cursor: pointer;
 }
