@@ -39,6 +39,7 @@ function exportarCsv() {
 
 // Verifica se um valor passado é do tipo object
 function isObjeto(valor) {
+
     return typeof valor === 'object';
 }
 

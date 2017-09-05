@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html>
 
-<!-- 
-
-    Cursos - Mini Avaliação DW1
-    Autores: Alex Souza, Cesar Pierobom, José Silva
-
-    Instituto Federal de São Paulo campus São Carlos
-    The content of project is licensed under The Unlicense <http://unlicense.org/#the-unlicense>.
-
+    <!-- 
+    
+        Cursos - Mini Avaliação DW1
+        Autores: Alex Souza, Cesar Pierobom, José Silva
+    
+        Instituto Federal de São Paulo campus São Carlos
+        The content of project is licensed under The Unlicense <http://unlicense.org/#the-unlicense>.
+    
     -->
 
-<head>
-    <!-- Cabeçalho HTML padrão gerado pelo Emmit -->
-    <meta charset="utf-8">
-    <title>ATIVIDADE DE JAVASCRIPT</title>
-    <!-- A variável GET "c" na referencia é para forçar o navegador recarregar o CSS -->
-    <link rel="stylesheet" href="style.css?c=">
-    <script src="app.js" type="text/javascript" charset="utf-8" async defer></script>
-</head>
+    <head>
+        <!-- Cabeçalho HTML padrão gerado pelo Emmit -->
+        <meta charset="utf-8">
+        <title>ATIVIDADE DE JAVASCRIPT</title>
+        <!-- A variável GET "c" na referencia é para forçar o navegador recarregar o CSS -->
+        <link rel="stylesheet" href="style.css?c=">
+        <script src="app.js" type="text/javascript" charset="utf-8" async defer></script>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Div que vai segurar o tamanho de todo o site -->
-    <div class="principal">
+        <!-- Div que vai segurar o tamanho de todo o site -->
+        <div class="principal">
 
-        <!-- Div branca com borda e cantos arredondados com a calculadora -->
-        <div class="conteudo">
-            <h2>ATIVIDADE DE JAVASCRIPT</h2>
+            <!-- Div branca com borda e cantos arredondados com a calculadora -->
+            <div class="conteudo">
+                <h2>ATIVIDADE DE JAVASCRIPT</h2>
 
-            <!-- Menu do site -->
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Calculadora</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="tabela.html">Tabela</a></li>
-                </ul>
-            </nav>
+                <!-- Menu do site -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Calculadora</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="tabela.html">Tabela</a></li>
+                    </ul>
+                </nav>
 
-            <!-- Div para alinhar calculadora no centro -->
-            <div class="centro">
+                <!-- Div para alinhar calculadora no centro -->
+                <div class="centro">
 
-                <!-- Calculadora em si -->
-                <section class="calculadora">
-                    <h2>CURSOS</h2>
+                    <!-- Calculadora em si -->
+                    <section class="calculadora">
+                        <h2>CURSOS</h2>
 
-                    <!-- Select option apresenta os cursos disponiveis -->
-                    <article class="selecao_cursos">
-                        <label> Cursos Disponíves </label>
-                        <select ondblclick="transfereOpcoes(this, true)" name="cursos" id="cursos" multiple>
+                        <!-- Select option apresenta os cursos disponiveis -->
+                        <article class="selecao_cursos">
+                            <label> Cursos Disponíves </label>
+                            <select ondblclick="transfereOpcoes(this, true)" name="cursos" id="cursos" multiple>
                                 <option data-posicao="0" value="akahtml5">JS</option>
                                 <option data-posicao="1" value="gambiarradosfrontend">JQuery</option>
                                 <option data-posicao="2" value="naoehlinguagemdeprogramacao">HTML</option>
@@ -59,22 +59,22 @@
                                 <option data-posicao="7" value="delphidamicrosoft">Visual Basic</option>
                                 <option data-posicao="8" value="maedetodasasbombas">Assembly</option>
                             </select>
-                    </article>
+                        </article>
 
-                    <!-- Botões para selecionar a operação que será realizada -->
-                    <aside class="cursos_selecionados">
-                        <label>Cursos Escolhidos</label>
-                        <select ondblclick="transfereOpcoes(this, false)" name="cursos_escolhidos" id="cursos_escolhidos" multiple />
-                    </aside>
-                </section>
+                        <!-- Botões para selecionar a operação que será realizada -->
+                        <aside class="cursos_selecionados">
+                            <label>Cursos Escolhidos</label>
+                            <select ondblclick="transfereOpcoes(this, false)" name="cursos_escolhidos" id="cursos_escolhidos" multiple />
+                        </aside>
+                    </section>
+                </div>
+
+                <!-- Rodapé com as informações do proejto -->
+                <footer>
+                    <h4>Sistema desenvolvido por Alex Souza, Cesar Pierobom, José Silva - 2017</h4>
+                </footer>
             </div>
-
-            <!-- Rodapé com as informações do proejto -->
-            <footer>
-                <h4>Sistema desenvolvido por Alex Souza, Cesar Pierobom, José Silva - 2017</h4>
-            </footer>
         </div>
-    </div>
-</body>
+    </body>
 
 </html>

@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html>
 
-<!-- 
-
-    Tabela - Mini Avaliação DW1
-    Autores: Alex Souza, Cesar Pierobom, José Silva
-
-    Instituto Federal de São Paulo campus São Carlos
-    The content of project is licensed under The Unlicense <http://unlicense.org/#the-unlicense>.
-
+    <!-- 
+    
+        Tabela - Mini Avaliação DW1
+        Autores: Alex Souza, Cesar Pierobom, José Silva
+    
+        Instituto Federal de São Paulo campus São Carlos
+        The content of project is licensed under The Unlicense <http://unlicense.org/#the-unlicense>.
+    
     -->
 
-<head>
-    <!-- Cabeçalho HTML padrão gerado pelo Emmit -->
-    <meta charset="utf-8">
-    <title>ATIVIDADE DE JAVASCRIPT</title>
-    <!-- A variável GET "c" na referencia é para forçar o navegador recarregar o CSS -->
-    <link rel="stylesheet" href="style.css?c=">
-    <script src="app.js" type="text/javascript" charset="utf-8" async defer></script>
-</head>
+    <head>
+        <!-- Cabeçalho HTML padrão gerado pelo Emmit -->
+        <meta charset="utf-8">
+        <title>ATIVIDADE DE JAVASCRIPT</title>
+        <!-- A variável GET "c" na referencia é para forçar o navegador recarregar o CSS -->
+        <link rel="stylesheet" href="style.css?c=">
+        <script src="app.js" type="text/javascript" charset="utf-8" async defer></script>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Div que vai segurar o tamanho de todo o site -->
-    <div class="principal">
+        <!-- Div que vai segurar o tamanho de todo o site -->
+        <div class="principal">
 
-        <!-- Div branca com borda e cantos arredondados com a calculadora -->
-        <div class="conteudo">
-            <h2>ATIVIDADE DE JAVASCRIPT</h2>
+            <!-- Div branca com borda e cantos arredondados com a calculadora -->
+            <div class="conteudo">
+                <h2>ATIVIDADE DE JAVASCRIPT</h2>
 
-            <!-- Menu do site -->
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Calculadora</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="tabela.html">Tabela</a></li>
-                </ul>
-            </nav>
+                <!-- Menu do site -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Calculadora</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="tabela.html">Tabela</a></li>
+                    </ul>
+                </nav>
 
-            <!-- Div para alinhar calculadora no centro -->
-            <div class="centro">
+                <!-- Div para alinhar calculadora no centro -->
+                <div class="centro">
 
-                <!-- Tabela -->
-                <section class="cliente">
-                    <h2>CLIENTES</h2>
+                    <!-- Tabela -->
+                    <section class="cliente">
+                        <h2>CLIENTES</h2>
 
-                    <!-- Tabela com as informações dos clientes -->
-                    <article class="tabela_cliente">
-                        <table id="exportar">
-                            <tr>
-                                <th>Nome</th>
-                                <th>Telefone</th>
-                                <th>Email</th>
-                                <th>Endereço</th>
-                            </tr>
-                            <tr>
-                                <td>Vader</td>
-                                <td>1111-1111</td>
-                                <td>valder@gmail.com</td>
-                                <td>Rua X</td>
-                            </tr>
-                            <tr>
-                                <td>Leia</td>
-                                <td>2222-2222</td>
-                                <td>leia@gmail.com</td>
-                                <td>Rua Y</td>
-                            </tr>
-                            <tr>
-                                <td>Padmé</td>
-                                <td>3333-333</td>
-                                <td>padme@gmail.com</td>
-                                <td>Rua W</td>
-                            </tr>
-                        </table>
-                    </article>
+                        <!-- Tabela com as informações dos clientes -->
+                        <article class="tabela_cliente">
+                            <table id="exportar">
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Telefone</th>
+                                    <th>Email</th>
+                                    <th>Endereço</th>
+                                </tr>
+                                <tr>
+                                    <td>Vader</td>
+                                    <td>1111-1111</td>
+                                    <td>valder@gmail.com</td>
+                                    <td>Rua X</td>
+                                </tr>
+                                <tr>
+                                    <td>Leia</td>
+                                    <td>2222-2222</td>
+                                    <td>leia@gmail.com</td>
+                                    <td>Rua Y</td>
+                                </tr>
+                                <tr>
+                                    <td>Padmé</td>
+                                    <td>3333-333</td>
+                                    <td>padme@gmail.com</td>
+                                    <td>Rua W</td>
+                                </tr>
+                            </table>
+                        </article>
 
-                    <!-- Botão de exportar -->
-                    <button class="btn-exportar" onclick="exportarCsv()">Exportar</button>
+                        <!-- Botão de exportar -->
+                        <button class="btn-exportar" onclick="exportarCsv()">Exportar</button>
 
-                    <hr />
+                        <hr />
 
-                    <!-- Resultado da exportação -->
-                    <label>RESULTADO</label><br>
-                    <textarea rows="4" cols="50" id="resultadocsv" readonly></textarea>
-                </section>
+                        <!-- Resultado da exportação -->
+                        <label>RESULTADO</label><br>
+                        <textarea rows="4" cols="50" id="resultadocsv" readonly></textarea>
+                    </section>
+                </div>
+
+                <!-- Rodapé com as informações do proejto -->
+                <footer>
+                    <h4>Sistema desenvolvido por Alex Souza, Cesar Pierobom, José Silva - 2017</h4>
+                </footer>
             </div>
-
-            <!-- Rodapé com as informações do proejto -->
-            <footer>
-                <h4>Sistema desenvolvido por Alex Souza, Cesar Pierobom, José Silva - 2017</h4>
-            </footer>
         </div>
-    </div>
-</body>
+    </body>
 
 </html>
