@@ -1,7 +1,7 @@
 /*
  *
  * Folha de Estilo - Mini Avaliação DW1
- * Autores: Alex Souza e José Antonio
+ * Autores: Alex Souza, Cesar Pierobom, José Silva
  *
  * Instituto Federal de São Paulo campus São Carlos
  * The content of project is licensed under The Unlicense <http://unlicense.org/#the-unlicense>.
@@ -10,7 +10,7 @@
 
 /* 1. Propriedades Basicas */
 body {
-    background: url('img/fundo.jpg') no-repeat #EDEDED;
+    background: url('img/fundo.jpg') repeat #EDEDED;
 }
 
 /* 2.1 Estrutura do Site */
