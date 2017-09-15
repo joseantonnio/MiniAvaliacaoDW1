@@ -10,7 +10,7 @@
 
 // Exporta uma tabela para CSV
 function exportarCsv() {
-
+	$("#hide_exportacao").show(1000);
     // Declara variáveis
     var csv = "";
     var table = document.getElementById("exportar");
@@ -121,3 +121,29 @@ function transfereOpcoes(e, left) {
     return;
 
 }
+
+
+function alteraTamanhoFonte(elemento,operacao){
+	var fontSize = parseInt($(elemento).css("font-size"));
+
+	if(operacao=="aumentar"){
+		fontSize = fontSize + 3;
+	}else{
+		fontSize = fontSize - 3;
+	}
+
+	fontSize += "px";
+	$(elemento).css({'font-size':fontSize});
+}
+
+
+$(document).ready(function(){
+
+	$("#exportar tr td").mouseover(function(){
+		alteraTamanhoFonte($(this).parent("tr"),"aumentar");
+	});
+
+	$("#exportar tr td").mouseleave(function(){
+		alteraTamanhoFonte($(this).parent("tr"),"diminuir");
+	});
+});
