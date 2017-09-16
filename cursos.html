@@ -50,23 +50,36 @@
                         <article class="selecao_cursos">
                             <label> Cursos Disponíves </label>
                             <select ondblclick="transfereOpcoes(this, true)" name="cursos" id="cursos" multiple>
-                                <option data-posicao="0" value="akahtml5">JS</option>
-                                <option data-posicao="1" value="gambiarradosfrontend">JQuery</option>
-                                <option data-posicao="2" value="naoehlinguagemdeprogramacao">HTML</option>
-                                <option data-posicao="3" value="arrumaaquiestragala">CSS</option>
-                                <option data-posicao="4" value="javadamicrosoft">C#</option>
-                                <option data-posicao="5" value="paidasgambi">PHP</option>
-                                <option data-posicao="6" value="vodasgambi">Delphi</option>
-                                <option data-posicao="7" value="delphidamicrosoft">Visual Basic</option>
-                                <option data-posicao="8" value="maedetodasasbombas">Assembly</option>
+                                <option data-posicao="0" data-preco="50.00" value="akahtml5">JS</option>
+                                <option data-posicao="1" data-preco="50.00" value="gambiarradosfrontend">JQuery</option>
+                                <option data-posicao="2" data-preco="50.00" value="naoehlinguagemdeprogramacao">HTML</option>
+                                <option data-posicao="3" data-preco="50.00" value="arrumaaquiestragala">CSS</option>
+                                <option data-posicao="4" data-preco="50.00" value="javadamicrosoft">C#</option>
+                                <option data-posicao="5" data-preco="50.00" value="paidasgambi">PHP</option>
+                                <option data-posicao="6" data-preco="50.00" value="vodasgambi">Delphi</option>
+                                <option data-posicao="7" data-preco="50.00" value="delphidamicrosoft">Visual Basic</option>
+                                <option data-posicao="8" data-preco="50.00" value="maedetodasasbombas">Assembly</option>
                             </select>
                         </article>
-
+                        
                         <!-- Botões para selecionar a operação que será realizada -->
                         <aside class="cursos_selecionados">
                             <label>Cursos Escolhidos</label>
-                            <select ondblclick="transfereOpcoes(this, false)" name="cursos_escolhidos" id="cursos_escolhidos" multiple />
+                            <select ondblclick="transfereOpcoes(this, false)" name="cursos_escolhidos" id="cursos_escolhidos" multiple></select>
                         </aside>
+                    </section>
+                </div>
+                
+                <!-- Div para alinhar calculadora no centro -->
+                <div class="centro">
+
+                    <!-- Totais -->
+                    <section class="calculadora">
+                        <h2>TOTAL</h2>
+                        <article>
+                            <p>O total dos cursos selecionados é de R$<span id="total">0,00</span>.</p>
+                            <p>Foram selecionados <span id="escolhidos">0</span> cursos.</p>
+                        </article>
                     </section>
                 </div>
 
