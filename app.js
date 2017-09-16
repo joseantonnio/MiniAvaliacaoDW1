@@ -58,6 +58,7 @@ function ordenar(lista1, lista2) {
 
             // Se a opção existir, armazena a posição do mesmo
             var pos = lista2.options[i].getAttribute('data-posicao');
+            var pre = lista2.options[i].getAttribute('data-preco');
 
             // Adiciona as informações da opção na array temporária
             temporaria[pos] = new Array();
@@ -66,6 +67,7 @@ function ordenar(lista1, lista2) {
 
             // Armazena a posição, já que a array vai ser filtrada
             temporaria[pos][2] = pos;
+            temporaria[pos][3] = pre;
         }
     }
 
@@ -85,6 +87,9 @@ function ordenar(lista1, lista2) {
 
         // Adiciona o atributo com a posição original da mesma
         op.setAttribute("data-posicao", temporaria[i][2]);
+        
+        // Adiciona o preço do curno no novo elemento
+        op.setAttribute("data-preco", temporaria[i][3]);
 
         // Adiciona na lista de DESTINO
         lista2.options[i] = op;
@@ -100,6 +105,8 @@ function transfereOpcoes(e, left) {
     var atual = e.options[e.selectedIndex];
     var cursos = document.getElementById("cursos");
     var escolhidos = document.getElementById("cursos_escolhidos");
+    var total = parseFloat($('#total').text());
+    var preco = parseFloat(atual.getAttribute('data-preco'));
 
     // Verifica se é da esquerda para direita ou vice-versa
     if (left) {
@@ -109,10 +116,18 @@ function transfereOpcoes(e, left) {
 
         // Ordena as listas
         ordenar(cursos, escolhidos);
+        
+        // Adiciona nos totais
+        $('#total').text(total + preco);
+        $('#escolhidos').text(escolhidos.length);
     } else {
 
         // Adiciona a opção atual na lista de destino
         cursos.options.add(atual);
+        
+        // Adiciona no total
+        $('#total').text(total - preco);
+        $('#escolhidos').text(escolhidos.length);
 
         // Ordena as listas
         ordenar(escolhidos, cursos);
