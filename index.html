@@ -18,9 +18,13 @@
         <!-- A variável GET "c" na referencia é para forçar o navegador recarregar o CSS -->
         <link rel="stylesheet" href="style.css?c=">
         <script src="jquery-3.2.1.min.js" type="text/javascript" charset="utf-8" async defer></script>
-        <script src="calculos.js" type="text/javascript" charset="utf-8" async defer></script>
+      
+
+
 
     </head>
+
+
 
     <body>
 
@@ -42,34 +46,39 @@
 
                 <!-- Div para alinhar calculadora no centro -->
                 <div class="centro">
+                    <div id="erro" style="display:none;">Digite 2 números </div>
+                        <!-- Calculadora em si -->
+                        <section class="calculadora">
+                            <h2>CALCULADORA</h2>
 
-                    <!-- Calculadora em si -->
-                    <section class="calculadora">
-                        <h2>CALCULADORA</h2>
+                            <!-- Inputs que vão receber os valores de entrada e a saída do calculo -->
+                            <article class="entradas">
+                                <input type="text" name="resultado" id="resultado" readonly="true" placeholder="Resultado"><br> <!-- Exibe o resultado do calculo -->
+                                <input type="text" name="numero1" id="numero1" placeholder="Número 1" onkeyup='if (isNaN(this.value)) {
+                                            this.value = ""
+                                        }'>  <!-- Input que aceita apenas números -->
+                                <input type="text" name="numero2" id="numero2" placeholder="Número 2" onkeyup='if (isNaN(this.value)) {
+                                            this.value = ""
+                                        }'><br>
+                            </article>
 
-                        <!-- Inputs que vão receber os valores de entrada e a saída do calculo -->
-                        <article class="entradas">
-                            <input type="text" name="resultado" id="resultado" readonly="true" placeholder="Resultado"><br> <!-- Exibe o resultado do calculo -->
-                            <input type="text" name="numero1" id="numero1" placeholder="Número 1" onkeyup='if (isNaN(this.value)) {this.value = ""}'>  <!-- Input que aceita apenas números -->
-                            <input type="text" name="numero2" id="numero2" placeholder="Número 2" onkeyup='if (isNaN(this.value)) {this.value = ""}'><br>
-                        </article>
+                            <!-- Botões para selecionar a operação que será realizada -->
+                            <aside class="botoes">
+                                <button class="btn"  onclick="calculadora(this.value)"  value="adicao">+</button>
+                                <button class="btn"  onclick="calculadora(this.value)"  value="subtracao">-</button>
+                                <button class="btn"  onclick="calculadora(this.value)"  value="multiplicacao">*</button>
+                                <button class="btn"  onclick="calculadora(this.value)"  value="divisao">/</button>
+                            </aside>
+                        </section>
+                    </div>
 
-                        <!-- Botões para selecionar a operação que será realizada -->
-                        <aside class="botoes">
-                            <button class="btn"  onclick="calculadora(this.value)"  value="adicao">+</button>
-                            <button class="btn"  onclick="calculadora(this.value)"  value="subtracao">-</button>
-                            <button class="btn"  onclick="calculadora(this.value)"  value="multiplicacao">*</button>
-                            <button class="btn"  onclick="calculadora(this.value)"  value="divisao">/</button>
-                        </aside>
-                    </section>
+                    <!-- Rodapé com as informações do proejto -->
+                    <footer>
+                        <h4>Sistema desenvolvido por Alex Souza, Cesar Pierobom, José Silva - 2017</h4>
+                    </footer>
                 </div>
-
-                <!-- Rodapé com as informações do proejto -->
-                <footer>
-                    <h4>Sistema desenvolvido por Alex Souza, Cesar Pierobom, José Silva - 2017</h4>
-                </footer>
             </div>
-        </div>
+          <script src="calculos.js" type="text/javascript" charset="utf-8" async defer></script>
     </body>
 
 </html>

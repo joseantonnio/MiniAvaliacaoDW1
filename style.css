@@ -213,3 +213,17 @@ tr:hover{
     background:#F5F5F5;
     color: #000;
 }
+#erro{
+
+    padding: 10px;
+    text-align: center;
+    color: #FFf;
+    background-color: #ff8e8e;
+    border: solid 1px #ef7c7c;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+
+}
